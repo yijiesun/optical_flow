@@ -1,0 +1,6 @@
+﻿  optical_flow_demo.cpp
+e:\simit\2020_new_project\zsxl\optical_flow_demo\optical_flow_demo\optical_flow_demo.cpp(65): warning C4018: “<”: 有符号/无符号不匹配
+e:\simit\2020_new_project\zsxl\optical_flow_demo\optical_flow_demo\optical_flow_demo.cpp(101): warning C4018: “<”: 有符号/无符号不匹配
+e:\simit\2020_new_project\zsxl\optical_flow_demo\optical_flow_demo\optical_flow_demo.cpp(381): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  optical_flow_demo.vcxproj -> E:\SIMIT\2020_new_project\zsxl\optical_flow_demo\Debug\optical_flow_demo.exe
+  optical_flow_demo.vcxproj -> E:\SIMIT\2020_new_project\zsxl\optical_flow_demo\Debug\optical_flow_demo.pdb (Full PDB)
