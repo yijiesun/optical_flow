@@ -33,8 +33,8 @@ public:
 		Mat flow;
 		calcOpticalFlowFarneback(gray_prev, gray, flow, 0.5, 3, 15, 3, 5, 1.2, 0);
 		cout << flow.size() << endl;  //对原图像每个像素都计算光流
-		for (size_t y = 0; y<gray_prev.rows; y += 10) {
-			for (size_t x = 0; x<gray_prev.cols; x += 10) {
+		for (size_t y = 0; y<gray_prev.rows; y += 5) {
+			for (size_t x = 0; x<gray_prev.cols; x += 5) {
 				Point2f fxy = flow.at<Point2f>(y, x);
 				line(output, Point(x, y), Point(cvRound(x + fxy.x), cvRound(y + fxy.y)), CV_RGB(0, 255, 0), 1, 8);
 			}
@@ -213,7 +213,8 @@ void vid_opticalFlowFarnebackProcess()
 	VideoProcessor processor;
 	OF_Farneback of_fb;
 	//打开输入视频
-	processor.setInput("F:\\video_dataset\\test1.avi");
+	processor.setInput("F:\\video_dataset\\test0.avi");
+	processor.setOutput("E:\\SIMIT\\2020_new_project\\zsxl\\dataset\\result\\Farneback0.avi");
 	processor.displayInput("Current Frame");
 	processor.displayOutput("Output Frame");
 	//设置每一帧的延时

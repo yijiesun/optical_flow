@@ -375,6 +375,7 @@ void of_demo()
 	FeatureTracker tracker;
 	//打开输入视频
 	processor.setInput("F:\\video_dataset\\test0.avi");
+	//processor.setOutput("F:\\video_dataset\\result\\of_demo.avi");
 	processor.displayInput("Current Frame");
 	processor.displayOutput("Output Frame");
 	//设置每一帧的延时

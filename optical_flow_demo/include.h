@@ -103,7 +103,7 @@ public:
 				output = frame;
 			}
 			if (Outputfile.length()) {
-				cvtColor(output, output, CV_GRAY2BGR);
+				//cvtColor(output, output, CV_GRAY2BGR);
 				writeNextFrame(output);
 			}
 			if (WindowNameOutput.length() != 0)
